@@ -1,19 +1,26 @@
 {
 	"extends": "expo/tsconfig.base",
 	"compilerOptions": {
-		//Modules
-		"module": "ES2015",
-		"allowImportingTsExtensions": true,
-
-		// Interop Constraints
-		"isolatedModules": true,
-		"forceConsistentCasingInFileNames": true,
-
-		// Type Check
-		"strict": true,
-		"strictNullChecks": false,
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
-		"noFallthroughCasesInSwitch": true,
+	  "module": "ES2015",
+	  "allowImportingTsExtensions": true,
+	  "types": ["node", "styled-components-react-native"],
+	  "isolatedModules": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "strict": true,
+	  "strictNullChecks": false,
+	  "noUnusedLocals": false,
+	  "noUnusedParameters": false,
+	  "noFallthroughCasesInSwitch": true,
+	  "skipLibCheck": true,
+	  "baseUrl": ".",
+	  "paths": {
+		"@/*": ["src/*"]
+	  }
 	},
-}
+	"include": [
+	  "src/**/*",
+	  "**/*.ts",
+	  "**/*.tsx"
+	]
+  }
+  
